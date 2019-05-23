@@ -98,7 +98,7 @@ h1.title {
 	background-position: bottom;
 }  
 
-.about-section, .ceremony-section {
+.about-section, .ceremony-section, .ceremony-section1 {
 	width: 100%; min-height: 100%;
 	background-image: url('../bg-a.jpg'); 
 	text-align: center;
