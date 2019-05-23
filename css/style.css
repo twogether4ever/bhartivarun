@@ -99,6 +99,7 @@ h1.title {
 }  
 
 .about-section, .ceremony-section, .ceremony-section1 {
+	box-shadow: 0 1px 13px 2px #84101;
 	width: 100%; min-height: 100%;
 	background-image: url('../bg-a.jpg'); 
 	text-align: center;
