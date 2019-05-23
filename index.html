@@ -14,25 +14,56 @@
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		
+		<style>
+			.bm-box {
+				position: relative;
+				display: inline-block;
+				cursor: pointer;
+				margin: 0 50px;
+			}
+			.bm-mask {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				background: rgba(0,0,0,0.5);
+				height: 100%;
+				width: 100%;
+				border-radius: 50%;
+				margin-left: -150px;
+				margin-top: -150px;
+				color: #fff;
+				display: none;
+			}	
+			.bm-mask span {
+				position: absolute;
+				left: 30%;
+				top: 45%;
+			}
+
+			.bm-box:hover .bm-mask {
+				display: block;
+			}
+		</style>
 	</head>
 
 	<body>
 		<div style="width: 100%; height: 100%; background-image: url('bg.jpg'); background-size: cover; background-position: top;">
-			<div class="title">Atul Weds Anushka</div>
-			<div class="date">Thursday 23 May 2019, 7PM</div>
-			<div class="date" style="color: #841010; font-weight: 700; font-size: 25px; line-height: 30px;">Magadh Vilas, Danapur, Patna</div>
+			<div class="title">Varun Weds Bharti</div>
+			<div class="date">Thursday 30 May 2019, 7PM</div>
+			<div class="date" style="color: #841010; font-weight: 700; font-size: 25px; line-height: 30px;">Andaz Banquet, Najafgarh Rd, Delhi</div>
 		</div>
 		<div class="menu-box">
 			<div id="home">Home</div>
 			<div id="about">About</div>
-			<div id="gallery">Tilak Ceremony</div>
+			<div id="gallery">Bridesmaids</div>
 			<div id="ceremony">Wedding Ceremony</div>	
 		</div>
 		<div class="mobile-menu-box">
 			<div id="menu-heading" class="menu-btn" id="mobile-home">Home</div>
 			<div id="home-m" class="menu-btn" id="mobile-home">Home</div>
 			<div id="about-m" class="menu-btn" id="mobile-about">About</div>
-			<div id="gallery-m" class="menu-btn" id="mobile-gallery">Tilak Ceremony</div>
+			<div id="gallery-m" class="menu-btn" id="mobile-gallery">Bridesmaids</div>
 			<div id="ceremony-m" class="menu-btn" id="mobile-ceremony">Wedding Ceremony</div>	
 			 
 		</div>
@@ -42,29 +73,49 @@
 			<div class="about-content" style="width: 80%; margin: 0 auto;">
 				<div>
 					<div class="bride"></div>
-					<div style="margin-top: 10px; color: #e3004d; font-weight: 600;">Anushka Nandini</div>
+					<div style="margin-top: 10px; color: #e3004d; font-weight: 600;">Bharti Dua</div>
 				</div>
 				<div><img style="width: 300px; " src="img/heart-1.png"></div>
 				<div>
 					<div class="groom"></div>
-					<div style="margin-top: 10px; color:#9635ad; font-weight: 600;">Atul Srivastava</div>
+					<div style="margin-top: 10px; color:#9635ad; font-weight: 600;">Varun Datta</div>
 				</div>
 			</div>
 		</div>
 		
-		<div class="tilak-section" style="background-image: url('bg-y.jpg'); background-position: bottom center;">
-			<h1 class="title" style="margin-top: 0; padding-top: 50px;">Tilak Ceremony</h1>
-			<div class="container center" style="color: #9635ad;font-family: 'Great Vibes', cursive;font-size: 35px;line-height: 40px;">We request the pleasure of your company to celebrate the Tilak Ceremony</div>
-			<div class="date" style="color: #e3004d;font-family: 'Great Vibes', cursive;font-size: 35px;line-height: 40px;">at Agrasen Bhavan, Pali road</div>
-			<div class="date" style="color: #e3004d;font-family: 'Great Vibes', cursive;font-size: 35px;line-height: 40px;">Dehri-On-Sone </div>
-			<iframe style="width: 100%; height: 400px; margin-top: 30px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.8983943981543!2d84.18560221483907!3d24.90144718403462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398da94cfb6bfeef%3A0x3eea14a14b172652!2sAgrasen+Bhavan!5e0!3m2!1sen!2sin!4v1557343285119!5m2!1sen!2sin" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<div class="ceremony-section">
+			<h1 class="title" style="margin-top: 0; padding-top: 50px;">Bridesmaids</h1>
+			<div>
+				<div class="bm-box">
+					<img style="width: 300px; border-radius: 50%; " src="img/ayushi.jpeg">
+					<div class="bm-mask" ><span>Ayushi</span></div>
+				</div>
+				<div class="bm-box">
+					<img style="width: 300px; border-radius: 50%; " src="img/himani.jpeg">
+					<div class="bm-mask" ><span>Himani</span></div>
+				</div>
+				<div class="bm-box">
+					<img style="width: 300px; border-radius: 50%; " src="img/dhriti.jpeg">
+					<div class="bm-mask" ><span>Dhriti</span></div>
+				</div>
+				<div class="bm-box">
+					<img style="width: 300px; border-radius: 50%; " src="img/kasvi.jpeg">
+					<div class="bm-mask"><span>Kasvi</span></div>
+				</div>
+				<div class="bm-box">
+					<img style="width: 300px; border-radius: 50%; " src="img/priyanshu.jpeg">
+					<div class="bm-mask"><span>Priyanshu</span></div>
+				</div>
+
+			</div>
+
 		</div>
 		
 		<div class="ceremony-section">
 			<h1 class="title" style="margin-top: 0; padding-top: 50px;">Wedding Day</h1>
 			<div class="container center" style="color: #9635ad;">Your love and blessing have helped us become who we are.</div>
 			<div class="container center" style="color: #e3004d;">Together with our parents, we invite you to share our joy as we exchange vows and celebrate our marriage.</div>
-			<iframe style="width: 100%; height: 400px; margin-top: 30px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.800289855628!2d85.05281926485426!3d25.611551683705144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed56457da68f05%3A0x4fe92d36f6e28681!2sMagadh+Vilas+Banquet+Hall!5e0!3m2!1sen!2sin!4v1557343367013!5m2!1sen!2sin" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe style="width: 100%; height: 400px; margin-top: 30px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28009.72683838347!2d77.11955728838471!3d28.653254824198633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03ea8b1a52df%3A0xeb734e713a323b2!2sAndaaz!5e0!3m2!1sen!2sin!4v1558539785346!5m2!1sen!2sin" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 		
 		<div id="thanks">Thank You</div>
